@@ -5,6 +5,23 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+body {
+  max-width: 100vh;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+
+.header h1,
+.header h2 {
+  margin: 0.5em;
+}
+
 .game {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -25,4 +42,12 @@
   align-items: center;
   justify-content: center;
   color: white;
+}
+.flip {
+  transform: rotateY(180deg);
+  transition: transform 0.5s ease;
+}
+.memory-card.flip {
+  background-color: white;
+  border: 1px solid black;
 }

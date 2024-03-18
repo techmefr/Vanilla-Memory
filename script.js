@@ -22,6 +22,10 @@ function pairCount(elmnt) {
   }
 }
 
+function flipCard() {
+  this.classList.add("flip");
+}
+
 const cardClick = (e) => pairCount(++counter);
 
 cards.forEach((card) => card.addEventListener("click", cardClick));
